@@ -7,10 +7,12 @@ var aritGeo = module.exports = function (myArray) {
 
 	for(var i = 0; i < myArray.length - 1; i++)
 	{
-    	if( myArray[i + 1] - myArray[i] !== diff )
-      		arith = false;
-    	if(myArray[i + 1] / ratio !== myArray[i])
-      		geo = false;
+    	if( myArray[i + 1] - myArray[i] !== diff ){
+    		arith = false;
+    	}      		
+    	if(myArray[i + 1] / ratio !== myArray[i]){
+    		geo = false;
+    	}      		
 	}
 
 	if(myArray.length === 0 ){
